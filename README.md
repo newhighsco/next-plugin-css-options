@@ -18,8 +18,11 @@ Create a `next.config.js` in your project:
 // next.config.js
 const withCssOptions = require('@newhighsco/next-plugin-css-options')
 module.exports = withCssOptions({
+  cssOptions: {
+    /* css-loader config options here */
+  },
   cssModulesOptions: {
-    /* config options here */
+    /* config options for CSS Modules here */
   }
 })
 ```
