@@ -34,13 +34,21 @@ const nextConfig = {
 }
 
 describe('addCssOptions', () => {
-  it('should override existing css-loader options', () => {
+  it('should return webpack', () => {
     const options = addCssOptions()
     const config = mockConfig()
-    const webpackConfig = options(config, {
+    const webpackConfig = options(config, {})
+
+    expect(webpackConfig).toEqual(config)
+  })
+
+  it('should override existing css-loader options', () => {
+    const options = addCssOptions({
       cssOptions: { foo: false },
       cssModulesOptions: { bar: false }
     })
+    const config = mockConfig()
+    const webpackConfig = options(config, {})
 
     expect(webpackConfig.module.rules.length).toEqual(1)
     expect(webpackConfig.module.rules[0].oneOf[0].use[0].options).toEqual({

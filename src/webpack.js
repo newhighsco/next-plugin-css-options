@@ -1,6 +1,6 @@
 module.exports = (nextConfig = {}) => (config, options) => {
   var rule, moduleRules, cssLoader
-  const { cssOptions, cssModulesOptions } = options
+  const { cssOptions, cssModulesOptions } = nextConfig
 
   if (
     (rule = config.module.rules.find(rule =>
