@@ -64,6 +64,14 @@
   "renovate": {
     "extends": [
       "@newhighsco"
+    ],
+    "packageRules": [
+      {
+        "extends": [
+          "monorepo:nextjs"
+        ],
+        "semanticCommitType": "fix"
+      }
     ]
   }
 }
