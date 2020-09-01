@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/newhighsco/next-plugin-css-options/compare/v1.0.4...v1.0.5) (2020-09-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to v9.5.3 ([fbfef17](https://github.com/newhighsco/next-plugin-css-options/commit/fbfef17ceb2cbdbd411e36d1dbce8cd9a579e62f))
+
 ## [1.0.4](https://github.com/newhighsco/next-plugin-css-options/compare/v1.0.3...v1.0.4) (2020-08-11)
 
 
