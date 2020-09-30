@@ -1,3 +1,5 @@
+> **DEPRECATED: No longer supported.**
+
 # next-plugin-css-options [![NPM version](https://img.shields.io/npm/v/@newhighsco/next-plugin-css-options.svg)](https://www.npmjs.com/package/@newhighsco/next-plugin-css-options)
 
 [Next.js](https://nextjs.org/) plugin for overriding css-loader options
